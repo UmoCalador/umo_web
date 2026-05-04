@@ -13,13 +13,13 @@ export const NewsCard = ({ item }: Props) => {
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
   const [isLoaded, setIsLoaded] = useState(false);
 
-const rawUrl = item.image?.[0]?.url;
+  const rawUrl = item.image?.[0]?.url;
 
-const imageUrl = rawUrl
-  ? rawUrl.startsWith("http")
-    ? rawUrl
-    : `${API_URL}${rawUrl}`
-  : "/img/og-image.jpg";
+  const imageUrl = rawUrl
+    ? rawUrl.startsWith("http")
+      ? rawUrl
+      : `${API_URL}${rawUrl}`
+    : "/img/og-image.jpg";
 
   return (
     <article className="w-full sm:w-[320px] lg:w-[360px] group text-white">
