@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 
 const geistMontserrat = Montserrat({
   variable: "--font-montserrat",
@@ -66,6 +67,9 @@ export default function RootLayout({
       lang="es"
       className={`${geistMontserrat.variable} h-full antialiased`}
     >
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ""} />
+      
       <body className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-1">{children}</main>
