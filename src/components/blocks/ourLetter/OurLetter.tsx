@@ -24,7 +24,7 @@ export const OurLetter = () => {
           target="_self"
         >
           Ver carta →
-        </ButtonLink> 
+        </ButtonLink>
       </div>
     </section>
   );

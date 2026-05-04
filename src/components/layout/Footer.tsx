@@ -1,11 +1,15 @@
-// src/components/layout/Footer.tsx
+"use client";
 
 import Link from "next/link";
 import { FaInstagram, FaWhatsapp, FaPhone, FaMailBulk } from "react-icons/fa";
 import { NavLinks } from "@/components/ui/navigation/NavLinks";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 
 export const Footer = () => {
+  const handleContactClick = (method: string) => {
+    sendGTMEvent({ event: "contact_click", method, location: "footer" });
+  };
   return (
     <footer className="w-full bg-black text-white">
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
@@ -36,6 +40,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 text-xl"
+              onClick={() => handleContactClick("instagram")}
             >
               <FaInstagram />
             </a>
@@ -44,6 +49,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 text-xl"
+              onClick={() => handleContactClick("whatsapp")}
             >
               <FaWhatsapp />
             </a>
@@ -52,6 +58,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300"
+              onClick={() => handleContactClick("phone")}
             >
               <FaPhone />
             </a>
@@ -60,12 +67,18 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 text-xl"
+              onClick={() => handleContactClick("email")}
             >
               <FaMailBulk />
             </a>
           </div>
-          <h2 className="pt-4 font-semibold text-lg text-center border-t-1">Ubicación</h2>
-          <p className="text-sm text-center"><b>UMO FIRE STEAKHOUSE CALA D'OR</b> <br />Calle de Sa Fonteta, 11, 07660 Cala d'Or, Balearic Islands</p>
+          <h2 className="pt-4 font-semibold text-lg text-center border-t-1">
+            Ubicación
+          </h2>
+          <p className="text-sm text-center">
+            <b>UMO FIRE STEAKHOUSE CALA D'OR</b> <br />
+            Calle de Sa Fonteta, 11, 07660 Cala d'Or, Balearic Islands
+          </p>
         </div>
       </div>
     </footer>
