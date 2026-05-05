@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default async function ContactoPage({
   params,
 }: {
-  params: Promise<{ lang: string }>;
+  params: { lang: string };
 }) {
   const { lang } = await params;
   const translations = await getDictionary(lang);

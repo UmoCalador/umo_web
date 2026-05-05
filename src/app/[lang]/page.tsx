@@ -7,7 +7,7 @@ import { LoadingProvider } from "@/context/LoadingContext";
 import { Preloader } from "@/components/ui/preloader/Preloader";
 import { getDictionary } from "@/utils/getTranslation";
 
-export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
+export default async function Home({ params }: { params: { lang: string } }) {
   const { lang } = await params; 
   const translations = await getDictionary(lang);
   

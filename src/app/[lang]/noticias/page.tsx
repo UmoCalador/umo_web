@@ -37,7 +37,7 @@ async function getInitialNews() {
 export default async function Page({
   params,
 }: {
-  params: Promise<{ lang: string }>;
+  params: { lang: string };
 }) {
   const { lang } = await params;
   const translations = await getDictionary(lang);

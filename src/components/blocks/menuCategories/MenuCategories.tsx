@@ -1,8 +1,4 @@
-type Category = {
-  name: string;
-  icon: React.ReactNode;
-  file: string;
-};
+import { Category } from "@/types/category";
 
 type Props = {
   categories: Category[];
