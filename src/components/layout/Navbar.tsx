@@ -5,15 +5,18 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLinks } from "@/components/ui/navigation/NavLinks";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const lang = pathname.split("/")[1] || "es";
 
   return (
     <nav className="w-full bg-black text-white p-6 fixed top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <h1 className="text-xl font-bold">
-          <Link href="/" className="hover:text-gray-300">
+          <Link href={`/${lang}`} className="hover:text-gray-300">
             <Image
               src="/img/logo_714x195.png"
               alt="UMO logo"

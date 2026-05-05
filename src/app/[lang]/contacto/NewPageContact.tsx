@@ -4,7 +4,11 @@ import { Map } from "@/components/blocks/map/Map";
 import { FaInstagram, FaPhone, FaWhatsapp, FaMailBulk } from "react-icons/fa";
 import { sendGTMEvent } from "@next/third-parties/google";
 
-export default function NewPageContact() {
+type Props = {
+  translations: any;
+}
+
+export default function NewPageContact({ translations }: Props) {
   const handleContactClick = (method: string) => {
     sendGTMEvent({ event: "contact_click", method, location: "contacto" });
   };
@@ -13,11 +17,10 @@ export default function NewPageContact() {
     <section className="min-h-screen max-w-7xl mx-auto px-6 pt-28 pb-6 ">
       <header>
         <h1 className="text-4xl md:text-6xl font-bold pb-2 text-gold text-center">
-          Contacto
+          {translations.contact.title}
         </h1>
         <p className="text-sm md:text-base pb-5 text-white text-center">
-          Podés encontrarnos o comunicarte con nosotros a través de los
-          siguientes medios.
+          {translations.contact.description}
         </p>
       </header>
       <section className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pb-10">

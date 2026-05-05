@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { getDictionary } from "@/utils/getTranslation";
 
 export const NavLinks = () => {
   const pathname = usePathname();
 
   const lang = pathname.split("/")[1] || "es";
+  const translations = getDictionary(lang);
 
   const isActive = (path: string) => {
     if (path === "/noticias") {
@@ -22,13 +24,13 @@ export const NavLinks = () => {
   return (
     <>
       <Link href={`/${lang}/carta`} className={linkClass("/carta")}>
-        Carta
+        {translations.navigation.letter}
       </Link>
       <Link href={`/${lang}/contacto`} className={linkClass("/contacto")}>
-        Contacto
+        {translations.navigation.contact}
       </Link>
       <Link href={`/${lang}/noticias`} className={linkClass("/noticias")}>
-        Noticias
+        {translations.navigation.news}
       </Link>
     </>
   );

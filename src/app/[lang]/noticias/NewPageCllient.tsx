@@ -6,7 +6,7 @@ import { SkeletonCard } from "@/components/ui/skeletons/SkeletonCard";
 
 const ITEMS_PER_PAGE = 6;
 
-export default function NewsPageClient( { initialNews }: { initialNews: NewsItem[] } ) {
+export default function NewsPageClient( { initialNews, translations }: { initialNews: NewsItem[]; translations: any } ) {
   const [allNews] = useState<NewsItem[]>(initialNews);
   const [visibleItems, setVisibleItems] = useState<NewsItem[]>(initialNews.slice(0, ITEMS_PER_PAGE));
   const [loading, setLoading] = useState(false);
@@ -53,16 +53,16 @@ export default function NewsPageClient( { initialNews }: { initialNews: NewsItem
     <section className="min-h-screen max-w-7xl mx-auto px-6 pt-28 pb-6">
       <header>
         <h1 className="text-4xl md:text-6xl font-bold flex justify-center pb-5 text-gold">
-          Noticias
+          {translations.news.title}
         </h1>
         <p className="flex justify-center pb-5 text-sm md:text-base text-white">
-          Enterate de todas las novedades y eventos.
+          {translations.news.description}
         </p>
       </header>
 
       {!loading && allNews.length === 0 && (
         <div className="text-center text-white py-10">
-          No hay noticias disponibles
+          {translations.news.noNews}
         </div>
       )}
 

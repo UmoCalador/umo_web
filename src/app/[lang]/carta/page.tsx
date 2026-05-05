@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { MenuCategories } from "@/components/blocks/menuCategories/MenuCategories";
 import { FaUtensils, FaWineGlass, FaIceCream } from "react-icons/fa";
+import { getDictionary } from "@/utils/getTranslation";
 
 const categories = [
   {
@@ -38,7 +39,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function CartaPage() {
+export default async function CartaPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const translations = await getDictionary(lang);
+
   return (
     <section className="min-h-screen text-white max-w-7xl mx-auto px-6 pt-28 pb-6">
       <header>
@@ -51,10 +59,7 @@ export default function CartaPage() {
           style={{ display: "block", margin: "0 auto" }}
         />
 
-        <h2 className="flex justify-center py-5 text-sm md:text-base">
-          Bienvenido a nuestro restaurante. Descubrí nuestras opciones de menú
-          cuidadosamente preparadas.
-        </h2>
+        <h2 className="flex justify-center py-5 text-sm md:text-base">{translations.letter.description}</h2>
       </header>
 
       <section>

@@ -5,8 +5,15 @@ import { FaInstagram, FaWhatsapp, FaPhone, FaMailBulk } from "react-icons/fa";
 import { NavLinks } from "@/components/ui/navigation/NavLinks";
 import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
+import { getDictionary } from "@/utils/getTranslation";
+import { usePathname } from "next/navigation";
 
 export const Footer = () => {
+  const pathname = usePathname();
+
+  const lang = pathname.split("/")[1] || "es";
+  const translations = getDictionary(lang);
+
   const handleContactClick = (method: string) => {
     sendGTMEvent({ event: "contact_click", method, location: "footer" });
   };
@@ -33,7 +40,7 @@ export const Footer = () => {
         </div>
 
         <div>
-          <h2 className="pb-4 font-semibold text-lg text-center">Contacto</h2>
+          <h2 className="pb-4 font-semibold text-lg text-center">{translations.footer.contact}</h2>
           <div className="flex gap-4 text-center pb-8 justify-center">
             <a
               href="https://www.instagram.com/umo.calador26"
@@ -73,7 +80,7 @@ export const Footer = () => {
             </a>
           </div>
           <h2 className="pt-4 font-semibold text-lg text-center border-t-1">
-            Ubicación
+            {translations.footer.location}
           </h2>
           <p className="text-sm text-center">
             <b>UMO FIRE STEAKHOUSE CALA D'OR</b> <br />

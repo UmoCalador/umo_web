@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import NewsPageClient from "./NewPageCllient";
+import { getDictionary } from "@/utils/getTranslation";
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export const metadata: Metadata = {
@@ -32,8 +34,14 @@ async function getInitialNews() {
   return data.data || [];
 }
 
-export default async function Page() {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const translations = await getDictionary(lang);
   const initialNews = await getInitialNews();
-  console.log("initialNews:", initialNews);  
-  return <NewsPageClient initialNews={initialNews} />;
+    
+  return <NewsPageClient initialNews={initialNews} translations={translations} />;
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NewPageContact from "./NewPageContact";
+import { getDictionary } from "@/utils/getTranslation";
 
 export const metadata: Metadata = {
   title: "Contacto",
@@ -18,6 +19,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ContactoPage() {
-  return <NewPageContact />;
+export default async function ContactoPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const translations = await getDictionary(lang);
+
+  return <NewPageContact translations={translations} />;
 }
