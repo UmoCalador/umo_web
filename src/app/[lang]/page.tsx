@@ -16,9 +16,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <LoadingProvider>
         {/* <Preloader /> */} 
         <HeroVideo translations={translations} />
-        <Presentation />
-        <OurLetter />
-        <LatestNews />
+        <Presentation translations={translations}/>
+        <OurLetter translations={translations}/>
+        <LatestNews translations={translations}/>
         <Map />
       </LoadingProvider>
     </>
