@@ -4,7 +4,11 @@ import { useEffect, useState } from "react";
 import { NewsCard } from "@/components/ui/newsCard/NewsCard";
 import { NewsItem } from "@/types/news";
 
-export const LatestNews = () => {
+type Props = {
+  translations: any;
+}
+
+export const LatestNews = ({ translations }: Props) => {
   const [allNews, setAllNews] = useState<NewsItem[]>([]);
   const [visibleItems, setVisibleItems] = useState<NewsItem[]>([]);
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
@@ -32,7 +36,7 @@ export const LatestNews = () => {
     <section className="w-full py-20">
       <div className="max-w-7xl mx-auto px-6">
         <h1 className="text-4xl md:text-6xl font-bold flex justify-center pb-10 text-gold">
-          Noticias
+          {translations.home.latest_news.title}
         </h1>
         <div className="flex flex-wrap justify-center gap-8">
           {news.map((item) => (

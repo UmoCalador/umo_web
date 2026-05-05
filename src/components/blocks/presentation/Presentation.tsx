@@ -1,18 +1,20 @@
 import Image from "next/image";
 
-export const Presentation = () => {
+type Props = {
+  translations: any;
+}
+
+export const Presentation = ({ translations }: Props) => {
+  
   return (
     <section className="w-full py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gold">Sobre nosotros</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-gold">{translations.home.presentation.title}</h1>
 
             <p className="mt-4 text-white leading-relaxed text-sm md:text-base">
-              Somos un restaurante dedicado a ofrecer experiencias culinarias
-              únicas, combinando tradición y creatividad en cada plato. Nuestro
-              compromiso es brindar calidad, sabor y un ambiente inolvidable
-              para cada cliente.
+              { translations.home.presentation.description }
             </p>
           </div>
 

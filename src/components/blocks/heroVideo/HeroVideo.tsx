@@ -3,7 +3,11 @@ import { ButtonLink } from "@/components/ui/buttonLink/ButtonLink";
 import Image from "next/image";
 import { useLoading } from "@/context/LoadingContext";
 
-export const HeroVideo = () => {
+type Props = {
+  translations: any;
+}
+
+export const HeroVideo = ({ translations }: Props) => {
   const { setIsLoading } = useLoading();
 
   return (
@@ -46,7 +50,7 @@ export const HeroVideo = () => {
               location: "home",
             }}
           >
-            Reservar →
+            {translations.home.hero.text_button} →
           </ButtonLink>
         </div>
       </div>
