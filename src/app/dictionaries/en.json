@@ -1,5 +1,40 @@
 {
+  "navigation": {
+    "home": "Home",
+    "letter": "Letter",
+    "contact": "Contact",
+    "news": "News"
+  },
+  "home": {
     "hero": {
-        "text_button": "Reserve"
+      "text_button": "Reserve"
+    },
+    "presentation": {
+      "title": "About Us",
+      "description": "We are a restaurant dedicated to offering unique culinary experiences, combining tradition and creativity in every dish. Our commitment is to provide quality, flavor, and an unforgettable atmosphere for every customer."
+    },
+    "our_letter": {
+      "title": "I discovered our letter",
+      "description": "Explore unique flavors and culinary experiences designed for every occasion.",
+      "text_button": "See letter"
+    },
+    "latest_news": {
+      "title": "News"
     }
+  },
+  "footer": {
+    "contact": "Contact",
+    "location": "Location"
+  },
+  "letter": {
+    "description": "Welcome to our restaurant. Discover our carefully prepared menu options."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "You can find us or contact us through the following means."
+  },
+  "news": {
+    "title": "News",
+    "description": "Find out about all the news and events."
+  }
 }

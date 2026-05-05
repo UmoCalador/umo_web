@@ -1,5 +1,40 @@
 {
+  "navigation": {
+    "home": "Inicio",
+    "letter": "Carta",
+    "contact": "Contacto",
+    "news": "Noticias"
+  },
+  "home": {
     "hero": {
-        "text_button": "Reservar"
+      "text_button": "Reservar"
+    },
+    "presentation": {
+      "title": "Sobre nosotros",
+      "description": "Somos un restaurante dedicado a ofrecer experiencias culinarias únicas, combinando tradición y creatividad en cada plato. Nuestro compromiso es brindar calidad, sabor y un ambiente inolvidable para cada cliente."
+    },
+    "our_letter": {
+      "title": "Descubrí nuestra carta",
+      "description": "Explorá sabores únicos y experiencias culinarias diseñadas para cada ocasión.",
+      "text_button": "Ver carta"
+    },
+    "latest_news": {
+      "title": "Noticias"
     }
+  },
+  "footer": {
+    "contact":"Contacto",
+    "location": "Ubicación"
+  },
+  "letter": {
+    "description": "Bienvenido a nuestro restaurante. Descubrí nuestras opciones de menú cuidadosamente preparadas."
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Podés encontrarnos o comunicarte con nosotros a través de los siguientes medios."
+  },
+  "news": {
+    "title": "Noticias",
+    "description": "Descubre todas las noticias y eventos."
+  }
 }
