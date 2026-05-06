@@ -40,5 +40,19 @@
     "card" : {
       "read_more": "Leer más"    
     }   
+  },
+  "legal": {
+    "politica-de-privacidad": {
+      "title": "Política de Privacidad",
+      "content": "## Responsable del tratamiento\n\n**Empresa:** UMO FIRE & STEAKHOUSE  \n**CIF:** B26882282  \n**Dirección:** Calle de Sa Fonteta, 11, 07660 Cala d'Or  \n**Email:** info@umocalador.es\n\n## Finalidad del tratamiento\nEn UMO FIRE & STEAKHOUSE tratamos los datos personales con las siguientes finalidades:\n\n- Gestionar reservas realizadas por teléfono\n- Atender consultas realizadas a través de la web o por contacto directo\n- Cumplir con las obligaciones legales aplicables\n\n## Legitimación\nLa base legal para el tratamiento de sus datos es:\n\n- La ejecución de un contrato (gestión de reservas)\n- El consentimiento del usuario (consultas voluntarias)\n- El cumplimiento de obligaciones legales\n\n## Conservación de datos\nLos datos personales se conservarán:\n\n- Durante el tiempo necesario para gestionar la relación con el cliente\n- Posteriormente, durante los plazos exigidos por la legislación aplicable\n\n## Destinatarios\nNo se cederán datos a terceros salvo obligación legal o cuando sea necesario para la prestación del servicio.\n\n## Derechos del usuario\nEl usuario puede ejercer los siguientes derechos:\n\n- Acceso a sus datos personales\n- Rectificación de datos inexactos\n- Supresión de sus datos\n- Oposición al tratamiento\n- Limitación del tratamiento\n\nPara ejercer estos derechos puede enviar una solicitud a: info@umocalador.es\n\nAsimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos.\n\n## Cambios en la política de privacidad\nUMO FIRE & STEAKHOUSE se reserva el derecho a modificar la presente política."
+    },
+    "aviso-legal": {
+      "title": "Aviso Legal",
+      "content": "En cumplimiento de la Ley de Servicios de la Sociedad de la Información (LSSI), se informa:\n\n**Titular:** UMO FIRE & STEAKHOUSE  \n**CIF:** B26882282  \n**Dirección:** Calle de Sa Fonteta, 11, 07660 Cala d'Or  \n**Email:** [info@umocalador.es](mailto:info@umocalador.es)\n\nEl acceso y uso de este sitio web atribuye la condición de usuario, implicando la aceptación de las condiciones aquí establecidas.\n\nEl titular no se responsabiliza del uso indebido de los contenidos del sitio web, siendo responsabilidad exclusiva del usuario que accede o los utiliza."
+    },
+    "politica-de-cookies": {
+      "title": "Política de Cookies",
+      "content": "Este sitio web utiliza cookies propias y de terceros con el fin de mejorar la experiencia de navegación del usuario.\n\nLas cookies permiten:\n\n- Analizar el uso de la página web\n- Mejorar los servicios ofrecidos\n\nEste sitio puede utilizar herramientas de análisis como Google.\n\nEl usuario puede aceptar, rechazar o configurar el uso de cookies mediante el banner habilitado al acceder a la web.\n\nPuede obtener más información consultando la configuración de su navegador."
+    }
   }
 }
