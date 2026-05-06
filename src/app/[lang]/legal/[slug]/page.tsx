@@ -1,15 +1,20 @@
 import { MarkdownRenderer } from "@/components/ui/markdownRenderer/MarkdownRenderer";
 import { getDictionary } from "@/utils/getTranslation";
 import { notFound } from "next/navigation";
-
+type LegalSlug =
+  | "politica-de-privacidad"
+  | "aviso-legal"
+  | "politica-de-cookies";
+  
 export default async function PrivacyPage({
   params,
 }: {
-  params: { lang: string; slug: string };
+  params: { lang: string; slug: LegalSlug };
 }) {
   const { lang, slug } = await params;
   const dict = await getDictionary(lang);
-  const content = dict.legal[slug];
+  
+  const content = dict["legal"][slug];
   if (!content) {
     notFound();
   }
