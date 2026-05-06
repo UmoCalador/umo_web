@@ -40,7 +40,9 @@ export const Footer = () => {
         </div>
 
         <div>
-          <h2 className="pb-4 font-semibold text-lg text-center">{translations.footer.contact}</h2>
+          <h2 className="pb-4 font-semibold text-lg text-center">
+            {translations.footer.contact}
+          </h2>
           <div className="flex gap-4 text-center pb-8 justify-center">
             <a
               href="https://www.instagram.com/umo.calador26"
@@ -86,6 +88,48 @@ export const Footer = () => {
             <b>UMO FIRE STEAKHOUSE CALA D'OR</b> <br />
             Calle de Sa Fonteta, 11, 07660 Cala d'Or, Balearic Islands
           </p>
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto px-6 pb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center border-t pt-6">
+          {/* Columna izquierda */}
+          <div className="text-sm text-center md:text-left">
+            © {new Date().getFullYear()} UMO FIRE & STEAKHOUSE
+          </div>
+
+          {/* Columna derecha */}
+          <div
+            className="
+        grid 
+        grid-cols-1 
+        sm:grid-cols-2 
+        md:grid-cols-3 
+        gap-4 
+        text-sm 
+        text-center 
+        md:text-right
+      "
+          >
+            <Link
+              href={`/${lang}/legal/aviso-legal`}
+              className="hover:text-gray-300"
+            >
+              {translations.legal["aviso-legal"].title}
+            </Link>
+            <Link
+              href={`/${lang}/legal/politica-de-privacidad`}
+              className="hover:text-gray-300"
+            >
+              {translations.legal["politica-de-privacidad"].title}
+            </Link>
+
+            <Link
+              href={`/${lang}/legal/politica-de-cookies`}
+              className="hover:text-gray-300"
+            >
+              {translations.legal["politica-de-cookies"].title}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
