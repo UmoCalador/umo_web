@@ -7,10 +7,10 @@ type Props = {
 export const Presentation = ({ translations }: Props) => {
   
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20" >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div>
+          <div data-aos="fade-right" data-aos-offset="300">
             <h1 className="text-4xl md:text-6xl font-bold text-gold">{translations.home.presentation.title}</h1>
 
             <p className="mt-4 text-white leading-relaxed text-sm md:text-base">
@@ -18,7 +18,7 @@ export const Presentation = ({ translations }: Props) => {
             </p>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center" data-aos="fade-left" data-aos-offset="300">
             <div className="relative aspect-square w-full sm:w-[70%] overflow-hidden">
               <Image
                 src="/img/presentation.jpg"

@@ -4,6 +4,7 @@ import "../globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
+import { AosProvider } from "@/components/providers/AosProvider";
 
 const geistMontserrat = Montserrat({
   variable: "--font-montserrat",
@@ -69,7 +70,7 @@ export default function RootLayout({
     >
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ""} />
-      
+      <AosProvider />
       <body className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-1">{children}</main>

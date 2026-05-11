@@ -16,14 +16,14 @@ export default function NewPageContact({ translations }: Props) {
   return (
     <section className="min-h-screen max-w-7xl mx-auto px-6 pt-28 pb-6 ">
       <header>
-        <h1 className="text-4xl md:text-6xl font-bold pb-2 text-gold text-center">
+        <h1 className="text-4xl md:text-6xl font-bold pb-2 text-gold text-center" data-aos="fade-up" data-aos-duration="500">
           {translations.contact.title}
         </h1>
-        <p className="text-sm md:text-base pb-5 text-white text-center">
+        <p className="text-sm md:text-base pb-5 text-white text-center" data-aos="fade-up" data-aos-duration="750">
           {translations.contact.description}
         </p>
       </header>
-      <section className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pb-10">
+      <section className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pb-10" data-aos="fade-up" data-aos-duration="1000">
         <address className="not-italic">
           <a
             href="https://wa.me/34641467880"

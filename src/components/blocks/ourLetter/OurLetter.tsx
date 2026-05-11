@@ -12,7 +12,7 @@ export const OurLetter = ({ translations }: Props) => {
 
 
   return (
-    <section className="w-full py-24 bg-gray-800 text-white">
+    <section className="w-full py-24 bg-gray-800 text-white" data-aos="fade-up" data-aos-duration="500">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-bold">
           {translations.home.our_letter.title}

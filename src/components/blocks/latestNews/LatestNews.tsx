@@ -33,7 +33,7 @@ export const LatestNews = ({ translations }: Props) => {
   if (!news.length) return null;
 
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20" data-aos="fade-up" data-aos-duration="500">
       <div className="max-w-7xl mx-auto px-6">
         <h1 className="text-4xl md:text-6xl font-bold flex justify-center pb-10 text-gold">
           {translations.home.latest_news.title}
