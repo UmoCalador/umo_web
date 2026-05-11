@@ -79,15 +79,15 @@ export default async function CartaPage({
           height={250}
           priority
           style={{ display: "block", margin: "0 auto" }}
-        />
+          data-aos="fade-up" data-aos-duration="750"/>
 
-        <h2 className="flex justify-center py-5 text-sm md:text-base">
+        <h2 className="flex justify-center py-5 text-sm md:text-base" data-aos="fade-up" data-aos-duration="1000">
           {translations.letter.description}
         </h2>
       </header>
 
-      <section>
-        <MenuCategories categories={categories[safeLang]} />
+      <section data-aos="fade-up" data-aos-duration="1250">
+        <MenuCategories categories={categories[safeLang]}/>
       </section>
     </section>
   );

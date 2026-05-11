@@ -5,13 +5,13 @@ import { useLoading } from "@/context/LoadingContext";
 
 type Props = {
   translations: any;
-}
+};
 
 export const HeroVideo = ({ translations }: Props) => {
   const { setIsLoading } = useLoading();
 
   return (
-    <section className="relative w-full h-[90vh]">
+    <section className="relative w-full h-[100vh]">
       <video
         autoPlay
         muted
@@ -25,7 +25,12 @@ export const HeroVideo = ({ translations }: Props) => {
 
       <div className="absolute inset-0 bg-black/60" />
 
-      <div className="relative z-10 flex items-center h-full">
+      <div
+        className="relative z-10 flex items-center h-full"
+        data-aos="fade-zoom-in"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-back"
+      >
         <div className="max-w-7xl mx-auto px-6 w-full flex-col items-center gap-6 text-center">
           <Image
             src="/img/umo_logo_652x883.png"

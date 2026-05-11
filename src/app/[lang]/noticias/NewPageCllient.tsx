@@ -52,16 +52,16 @@ export default function NewsPageClient( { initialNews, translations }: { initial
   return (
     <section className="min-h-screen max-w-7xl mx-auto px-6 pt-28 pb-6">
       <header>
-        <h1 className="text-4xl md:text-6xl font-bold flex justify-center pb-5 text-gold">
+        <h1 className="text-4xl md:text-6xl font-bold flex justify-center pb-5 text-gold" data-aos="fade-up" data-aos-duration="500">
           {translations.news.title}
         </h1>
-        <p className="flex justify-center pb-5 text-sm md:text-base text-white">
+        <p className="flex justify-center pb-5 text-sm md:text-base text-white" data-aos="fade-up" data-aos-duration="750">
           {translations.news.description}
         </p>
       </header>
 
       {!loading && allNews.length === 0 && (
-        <div className="text-center text-white py-10">
+        <div className="text-center text-white py-10" data-aos="fade-up" data-aos-duration="750">
           {translations.news.no_news}
         </div>
       )}
@@ -74,11 +74,11 @@ export default function NewsPageClient( { initialNews, translations }: { initial
             sm:grid-cols-2 
             lg:grid-cols-3 
             gap-8 
-            justify-items-center
-          "
+            justify-items-center"
+            data-aos="fade-up" data-aos-duration="1000"
         >
           {visibleItems.map((item) => (
-            <div key={item.id} className="animate-fadeIn">
+            <div key={item.id} className="animate-fadeIn" data-aos="fade-up" data-aos-duration="1000">
               <NewsCard item={item} translations={translations} />
             </div>
           ))}
