@@ -38,7 +38,7 @@ body {
 }
 
 .presentation {
-  background-image: url("/img/presentation_2.jpeg");
+  background-image: url("/img/presentation.jpeg");
   background-size: initial;
   background-position: right center;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@ body {
 }
 
 .our_letter {
-  background-image: url("/img/our_letter_1.png");
+  background-image: url("/img/our_letter.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
