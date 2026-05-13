@@ -5,6 +5,7 @@ import { FaUtensils, FaWineGlass, FaIceCream } from "react-icons/fa";
 import { getDictionary } from "@/utils/getTranslation";
 import { normalizeLang, Lang } from "@/i18n/config";
 import { Category } from "@/types/category";
+import { HeroVideo } from "@/components/blocks/heroVideo/HeroVideo";
 
 const categories: Record<Lang, Category[]> = {
   es: [
@@ -70,8 +71,9 @@ export default async function CartaPage({
   const translations = await getDictionary(safeLang);
 
   return (
-    <section className="min-h-screen text-white max-w-7xl mx-auto px-6 pt-28 pb-6">
-      <header>
+    <section className="min-h-screen text-white pb-6">
+      <HeroVideo translations={translations} videoSrc="/hero_video.mp4" showLogo={false} />
+      {/**<header>
         <Image
           src="/img/logo_blanco_554x718.png"
           alt="UMO - Carta"
@@ -80,14 +82,25 @@ export default async function CartaPage({
           priority
           style={{ display: "block", margin: "0 auto" }}
           data-aos="fade-up" data-aos-duration="750"/>
-
+         
         <h2 className="flex justify-center py-5 text-sm md:text-base" data-aos="fade-up" data-aos-duration="1000">
           {translations.letter.description}
         </h2>
-      </header>
+      </header>*/}
 
-      <section data-aos="fade-up" data-aos-duration="1250">
-        <MenuCategories categories={categories[safeLang]}/>
+      <section
+        className="max-w-7xl mx-auto py-20"
+        data-aos="fade-up"
+        data-aos-duration="1250"
+      >
+        <h2
+          className="flex justify-center pb-10 text-sm md:text-base"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          {translations.letter.description}
+        </h2>
+        <MenuCategories categories={categories[safeLang]} />
       </section>
     </section>
   );
