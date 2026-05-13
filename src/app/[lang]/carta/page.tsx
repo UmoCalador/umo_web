@@ -6,6 +6,7 @@ import { getDictionary } from "@/utils/getTranslation";
 import { normalizeLang, Lang } from "@/i18n/config";
 import { Category } from "@/types/category";
 import { HeroVideo } from "@/components/blocks/heroVideo/HeroVideo";
+import { GalleryLetter } from "@/components/ui/galleryLetter/GalleryLetter";
 
 const categories: Record<Lang, Category[]> = {
   es: [
@@ -71,7 +72,7 @@ export default async function CartaPage({
   const translations = await getDictionary(safeLang);
 
   return (
-    <section className="min-h-screen text-white pb-6">
+    <section className="min-h-screen text-white">
       <HeroVideo translations={translations} videoSrc="/hero_video.mp4" showLogo={false} />
       {/**<header>
         <Image
@@ -102,6 +103,7 @@ export default async function CartaPage({
         </h2>
         <MenuCategories categories={categories[safeLang]} />
       </section>
+      <GalleryLetter />
     </section>
   );
 }
