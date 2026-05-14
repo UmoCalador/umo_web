@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/img/gallery_letter/image_1.png",
+    "title": "Lorem ipsum 1",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 2,
+    "image": "/img/gallery_letter/image_2.jpg",
+    "title": "Lorem ipsum 2",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 3,
+    "image": "/img/gallery_letter/image_3.jpg",
+    "title": "Lorem ipsum 3",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 4,
+    "image": "/img/gallery_letter/image_4.jpg",
+    "title": "Lorem ipsum 4",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  }
+]

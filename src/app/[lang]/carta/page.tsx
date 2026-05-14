@@ -6,7 +6,8 @@ import { getDictionary } from "@/utils/getTranslation";
 import { normalizeLang, Lang } from "@/i18n/config";
 import { Category } from "@/types/category";
 import { HeroVideo } from "@/components/blocks/heroVideo/HeroVideo";
-import { GalleryLetter } from "@/components/ui/galleryLetter/GalleryLetter";
+import { Gallery } from "@/components/blocks/gallery/Gallery";
+import { getTranslationGalleryLetter } from "@/utils/getTranslationGalleryLetter";
 
 const categories: Record<Lang, Category[]> = {
   es: [
@@ -70,6 +71,7 @@ export default async function CartaPage({
   const { lang } = await params;
   const safeLang = normalizeLang(lang);
   const translations = await getDictionary(safeLang);
+  const translationGalleryLetter = await getTranslationGalleryLetter(lang);
 
   return (
     <section className="min-h-screen text-white">
@@ -94,16 +96,16 @@ export default async function CartaPage({
         data-aos="fade-up"
         data-aos-duration="1250"
       >
-        <h2
+        <p
           className="flex justify-center pb-10 text-sm md:text-base"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           {translations.letter.description}
-        </h2>
+        </p>
         <MenuCategories categories={categories[safeLang]} />
       </section>
-      <GalleryLetter />
+      <Gallery items={translationGalleryLetter} />
     </section>
   );
 }
