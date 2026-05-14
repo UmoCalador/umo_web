@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { GalleryItem } from "@/types/galerryItem";
 import { useState } from "react";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 
 type Props = {
@@ -10,18 +10,45 @@ type Props = {
 };
 
 export const Gallery = ({ items }: Props) => {
-  const [selected, setSelected] = useState<GalleryItem | null>(null);
-  const setSelectedItem = (item: GalleryItem) => {
-    setSelected(item);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
+  const openModal = (index: number) => {
+    setSelectedIndex(index);
   };
+
+  const closeModal = () => {
+    setSelectedIndex(null);
+  };
+
+  const nextImage = () => {
+    if (selectedIndex === null) return;
+
+    setSelectedIndex((prev) => {
+      if (prev === null) return 0;
+
+      return prev === items.length - 1 ? 0 : prev + 1;
+    });
+  };
+
+  const prevImage = () => {
+    if (selectedIndex === null) return;
+
+    setSelectedIndex((prev) => {
+      if (prev === null) return 0;
+
+      return prev === 0 ? items.length - 1 : prev - 1;
+    });
+  };
+
+  const selected = selectedIndex !== null ? items[selectedIndex] : null;
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1">
-      {items.map((item) => (
+      {items.map((item, index) => (
         <div
           className="relative aspect-[4/3] overflow-hidden cursor-pointer"
           key={item.id}
-          onClick={() => setSelectedItem(item)}
+          onClick={() => openModal(index)}
         >
           <Image
             src={item.image}
@@ -42,12 +69,24 @@ export const Gallery = ({ items }: Props) => {
           >
             <div
               className="text-white absolute right-0 top-0 p-4 cursor-pointer text-2xl"
-              onClick={() => {
-                setSelected(null);
-              }}
+              onClick={closeModal}
             >
               <FaTimes />
             </div>
+
+            <button
+              className="absolute left-4 text-white text-3xl z-50 py-3 pl-2 pr-3 cursor-pointer bg-black/60 rounded-[50%]"
+              onClick={prevImage}
+            >
+              <FaChevronLeft />
+            </button>
+
+            <button
+              className="absolute right-4 text-white text-3xl z-50 py-3 pl-3 pr-2 cursor-pointer bg-black/60 rounded-[50%]"
+              onClick={nextImage}
+            >
+              <FaChevronRight />
+            </button>
 
             <motion.div
               initial={{ scale: 0.9, opacity: 0, y: 20 }}
