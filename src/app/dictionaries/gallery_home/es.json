@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "image": "/img/our_letter.png",
+    "image": "/img/gallery_home/gamba_roja_v1.jpg",
     "title": "Lorem ipsum 1",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   },
   {
     "id": 2,
-    "image": "/img/our_letter.png",
+    "image": "/img/gallery_home/octopus.jpg",
     "title": "Lorem ipsum 2",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   },
   {
     "id": 3,
-    "image": "/img/our_letter.png",
+    "image": "/img/gallery_home/caviar.jpg",
     "title": "Lorem ipsum 3",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   },
   {
     "id": 4,
-    "image": "/img/our_letter.png",
+    "image": "/img/gallery_home/fish.jpg",
     "title": "Lorem ipsum 4",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   }

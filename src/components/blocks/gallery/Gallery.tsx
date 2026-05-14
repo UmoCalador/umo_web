@@ -57,21 +57,20 @@ export const Gallery = ({ items }: Props) => {
               className="bg-white max-w-4xl w-full gap-4"
             >
               <div className="bg-white max-w-4xl mx-auto p-6 gap-4">
-                <div>
-                  <div className="relative h-[500px] overflow-hidden">
-                    <Image
-                      src={selected.image}
-                      alt={selected.title}
-                      fill
-                      className="object-cover pb-6"
-                    />
-                  </div>
+                <div className="relative overflow-hidden">
+                  <Image
+                    src={selected.image}
+                    alt={selected.title}
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
-                <div>
+                {/**<div>
                   <div>
-                    <h2 className="text-xl font-bold">{selected.title}</h2>
+                    <h2 className="text-xl font-bold pt-6">{selected.title}</h2>
                   </div>
-                </div>
+                </div>*/}
               </div>
             </motion.div>
           </motion.div>
