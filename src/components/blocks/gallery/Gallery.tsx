@@ -43,21 +43,28 @@ export const Gallery = ({ items }: Props) => {
   const selected = selectedIndex !== null ? items[selectedIndex] : null;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1">
-      {items.map((item, index) => (
-        <div
-          className="relative aspect-[4/3] overflow-hidden cursor-pointer"
-          key={item.id}
-          onClick={() => openModal(index)}
-        >
-          <Image
-            src={item.image}
-            alt={item.title}
-            fill
-            className="object-cover"
-          />
-        </div>
-      ))}
+    <>
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1"
+        data-aos="fade-up"
+        data-aos-duration="500"
+      >
+        {items.map((item, index) => (
+          <div
+            className="relative aspect-[4/3] overflow-hidden cursor-pointer"
+            key={item.id}
+            onClick={() => openModal(index)}
+          >
+            <Image
+              src={item.image}
+              alt={item.title}
+              fill
+              className="object-cover"
+            />
+          </div>
+        ))}
+      </div>
+
       <AnimatePresence>
         {selected && (
           <motion.div
@@ -115,6 +122,6 @@ export const Gallery = ({ items }: Props) => {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 };

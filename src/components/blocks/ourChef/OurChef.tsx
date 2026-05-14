@@ -17,7 +17,7 @@ export const OurChef = ({ translations }: Props) => {
                 src="/img/presentation.jpeg"
                 alt="Our Chef"
                 fill
-                className="object-cover object-center"
+                className="object-cover object-center" data-aos="fade-right" data-aos-offset="300"
               />
             </div>
           </div>

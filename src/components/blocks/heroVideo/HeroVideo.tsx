@@ -8,13 +8,17 @@ type Props = {
   translations: any;
   videoSrc: string;
   showLogo: boolean;
+  showText?: string;
 };
 
-export const HeroVideo = ({ translations, videoSrc, showLogo }: Props) => {
+export const HeroVideo = ({
+  translations,
+  videoSrc,
+  showLogo,
+  showText = "",
+}: Props) => {
   const { setIsLoading } = useLoading();
-  //const [logo, setLogo] = useState(true);
 
-  console.log(videoSrc);
   return (
     <section className="relative w-full h-[100vh]">
       <video
@@ -29,6 +33,19 @@ export const HeroVideo = ({ translations, videoSrc, showLogo }: Props) => {
       </video>
 
       <div className="absolute inset-0 bg-black/60" />
+      {showText && (
+        <div
+          className="relative z-10 flex justify-center items-center h-full"
+          data-aos="fade-zoom-in"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-back"
+        >
+          <h1 className="text-4xl md:text-7xl font-bold text-gold">
+            {showText}
+          </h1>
+        </div>
+      )}
+
       {showLogo && (
         <div
           className="relative z-10 flex items-center h-full"

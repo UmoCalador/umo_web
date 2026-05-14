@@ -75,7 +75,7 @@ export default async function CartaPage({
 
   return (
     <section className="min-h-screen text-white">
-      <HeroVideo translations={translations} videoSrc="/hero_video.mp4" showLogo={false} />
+      <HeroVideo translations={translations} videoSrc="/hero_video.mp4" showLogo={false} showText={translations.letter.title} />
       {/**<header>
         <Image
           src="/img/logo_blanco_554x718.png"
