@@ -66,7 +66,7 @@ export default async function NoticiaDetalle({ params }: Props) {
           {noticia.title}
         </h1>
 
-        <p className="mt-4 text-lg text-white text-center ">
+        <p className="mt-4 text-lg text-white text-center font-semibold">
           {noticia.excerpt}
         </p>
       </header>
@@ -83,11 +83,11 @@ export default async function NoticiaDetalle({ params }: Props) {
         </figure>
       )}
       
-      <time className="text-sm text-white">
+      <time className="text-sm text-white font-semibold">
         {formatDate(noticia.publishedAt)}
       </time>
 
-      <section className="mt-4 text-white leading-relaxed space-y-4 text-sm md:text-base">
+      <section className="mt-4 text-white leading-relaxed space-y-4 text-sm md:text-base font-semibold">
         <MarkdownRenderer content={noticia.content} />
       </section>
     </article>

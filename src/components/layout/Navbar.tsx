@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLinks } from "@/components/ui/navigation/NavLinks";
 import Image from "next/image";
@@ -10,33 +10,43 @@ import { LanguageSwitcher } from "@/components/ui/languageSwitcher/LanguageSwitc
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const lang = pathname.split("/")[1] || "es";
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full bg-black text-white p-6 fixed top-0 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <h1 className="text-xl font-bold">
+    <nav
+      className={`w-full text-white px-6 py-2 fixed top-0 z-50 transition-colors duration-300 ${scrolled || isOpen ? "bg-black" : "bg-transparent"}`}
+    >
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3">
+        <h1 className="text-xl font-bold justify-self-start font-cormorant text-[60px]" data-aos="fade-right" data-aos-delay="100">
           <Link href={`/${lang}`} className="hover:text-gray-300">
-            <Image
-              src="/img/logo_714x195.png"
-              alt="UMO logo"
-              width={150}
-              height={150}
-              priority
-              style={{ display: "block", margin: "0 auto" }}
-            />
+            UMO
           </Link>
         </h1>
-        
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <FaTimes /> : <FaBars />}
-        </button>
-        
-        <div className="hidden items-center md:flex gap-6 text-md">
+
+        <div className="hidden items-center md:flex gap-6 text-md justify-self-center" data-aos="fade-down" data-aos-delay="100">
           <NavLinks />
+        </div>
+
+        <div className="hidden items-center md:flex gap-6 text-md justify-self-end" data-aos="fade-left" data-aos-delay="100">
           <LanguageSwitcher />
         </div>
+        <button
+          className="md:hidden justify-self-end"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
 
       {isOpen && (

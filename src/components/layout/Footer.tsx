@@ -93,7 +93,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center border-t pt-6">
           {/* Columna izquierda */}
-          <div className="text-sm text-center md:text-left">
+          <div className="text-sm text-center md:text-left font-semibold">
             © {new Date().getFullYear()} UMO FIRE & STEAKHOUSE
           </div>
 
@@ -112,20 +112,20 @@ export const Footer = () => {
           >
             <Link
               href={`/${lang}/legal/aviso-legal`}
-              className="hover:text-gray-300"
+              className="hover:text-gray-300 font-semibold"
             >
               {translations.legal["aviso-legal"].title}
             </Link>
             <Link
               href={`/${lang}/legal/politica-de-privacidad`}
-              className="hover:text-gray-300"
+              className="hover:text-gray-300 font-semibold"
             >
               {translations.legal["politica-de-privacidad"].title}
             </Link>
 
             <Link
               href={`/${lang}/legal/politica-de-cookies`}
-              className="hover:text-gray-300"
+              className="hover:text-gray-300 font-semibold"
             >
               {translations.legal["politica-de-cookies"].title}
             </Link>

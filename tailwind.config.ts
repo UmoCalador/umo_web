@@ -8,7 +8,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-montserrat)"],
+        sans: ["var(--font-montserrat)", "var(--font-cormorant)"],
       },
     },
   },

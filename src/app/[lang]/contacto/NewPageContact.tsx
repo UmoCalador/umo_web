@@ -16,10 +16,10 @@ export default function NewPageContact({ translations }: Props) {
   return (
     <section className="min-h-screen max-w-7xl mx-auto px-6 pt-28 pb-6 ">
       <header>
-        <h1 className="text-4xl md:text-6xl font-bold pb-2 text-gold text-center" data-aos="fade-up" data-aos-duration="500">
+        <h1 className="text-4xl md:text-7xl font-bold pb-2 text-gold text-center" data-aos="fade-up" data-aos-duration="500">
           {translations.contact.title}
         </h1>
-        <p className="text-sm md:text-base pb-5 text-white text-center" data-aos="fade-up" data-aos-duration="750">
+        <p className="text-sm md:text-base pb-5 text-white text-center font-semibold" data-aos="fade-up" data-aos-duration="750">
           {translations.contact.description}
         </p>
       </header>
@@ -37,7 +37,7 @@ export default function NewPageContact({ translations }: Props) {
             onClick={() => handleContactClick("whatsapp")}
           >
             <FaWhatsapp className="text-4xl" />
-            <span>+34 641 46 78 80</span>
+            <span className="font-semibold">+34 641 46 78 80</span>
           </a>
         </address>
         <address className="not-italic">
@@ -52,7 +52,7 @@ export default function NewPageContact({ translations }: Props) {
 
           >
             <FaPhone className="text-4xl" />
-            <span>+34 871 612 605</span>
+            <span className="font-semibold">+34 871 612 605</span>
           </a>
         </address>
         <address className="not-italic">
@@ -68,7 +68,7 @@ export default function NewPageContact({ translations }: Props) {
             onClick={() => handleContactClick("instagram")}
           >
             <FaInstagram className="text-4xl" />
-            <span>@umo.calador26</span>
+            <span className="font-semibold">@umo.calador26</span>
           </a>
         </address>
         <address className="not-italic">
@@ -83,7 +83,7 @@ export default function NewPageContact({ translations }: Props) {
             onClick={() => handleContactClick("email")}
           >
             <FaMailBulk className="text-4xl" />
-            <span>info@umocalador.es</span>
+            <span className="font-semibold">info@umocalador.es</span>
           </a>
         </address>
       </section>

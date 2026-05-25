@@ -48,11 +48,11 @@ export const NewsCard = ({ item, translations }: Props & { translations: any }) 
             {item.title}
           </h3>
 
-          <p className="mt-2 text-white line-clamp-2 text-sm md:text-base">
+          <p className="mt-2 text-white line-clamp-2 text-sm md:text-base font-semibold">
             {item?.excerpt}
           </p>
 
-          <span className="inline-block mt-4 text-sm text-white group-hover:text-gray-300 transition">
+          <span className="inline-block mt-4 text-sm text-white group-hover:text-gray-300 transition font-semibold">
             {translations.news.card.read_more} →
           </span>
         </div>

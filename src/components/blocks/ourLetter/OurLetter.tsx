@@ -12,13 +12,13 @@ export const OurLetter = ({ translations }: Props) => {
 
 
   return (
-    <section className="w-full py-24 bg-gray-800 text-white" data-aos="fade-up" data-aos-duration="500">
-      <div className="max-w-3xl mx-auto px-6 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold">
+    <section className="w-full py-24 text-white our_letter relative" >
+      <div className="mx-auto px-6 text-center relative z-10" data-aos="fade-up" data-aos-duration="500">
+        <h1 className="text-4xl md:text-7xl font-bold">
           {translations.home.our_letter.title}
         </h1>
 
-        <p className="mt-4 text-white text-sm md:text-base">
+        <p className="mt-4 text-white text-sm md:text-base font-semibold">
           {translations.home.our_letter.description}
         </p>
 
@@ -40,6 +40,7 @@ export const OurLetter = ({ translations }: Props) => {
           {translations.home.our_letter.text_button} →
         </ButtonLink>
       </div>
+      <div className="bg-black/70 absolute w-full h-full top-0 z-0"></div>
     </section>
   );
 };

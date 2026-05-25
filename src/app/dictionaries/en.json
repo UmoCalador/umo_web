@@ -5,13 +5,19 @@
     "contact": "Contact",
     "news": "News"
   },
+  "cookies":{
+    "text": "We use cookies to improve your experience, personalize content, and analyze our website traffic. By continuing to browse, you agree to the use of cookies in accordance with our privacy policy.",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
   "home": {
     "hero": {
-      "text_button": "Reserve"
+      "text_button": "Reserve",
+      "text": "Gourmet experience"
     },
     "presentation": {
       "title": "About Us",
-      "description": "We are a restaurant dedicated to offering unique culinary experiences, combining tradition and creativity in every dish. Our commitment is to provide quality, flavor, and an unforgettable atmosphere for every customer."
+      "description": "At our restaurant, we understand gastronomy as an experience enjoyed with all the senses. We were born from a passion for fire, quality ingredients, and the authentic essence of Mediterranean cuisine, creating a space where tradition and creativity meet in perfect harmony.\n\n Every rice dish that leaves our kitchen is prepared with precision, respect for the ingredients, and a constant pursuit of perfect flavor. The embers are the heart of our offering: carefully selected premium meats, cooked to perfection to enhance their texture, aroma, and character.\n\n Our concept combines elegance, a welcoming atmosphere, and an immersive ambiance where smoke, fire, and Mediterranean aromas are part of a unique gastronomic experience. We believe in honest flavors, exceptional raw materials, and the art of sharing around a good table.\n\n More than a restaurant, we are a new space designed for leisurely enjoyment, allowing yourself to be surprised and making each visit an unforgettable memory."
     },
     "our_letter": {
       "title": "I discovered our letter",
@@ -20,6 +26,11 @@
     },
     "latest_news": {
       "title": "News"
+    },
+    "our_chef":{
+      "title": "Our Chef",
+      "name": "first name last name",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     }
   },
   "footer": {
@@ -27,7 +38,8 @@
     "location": "Location"
   },
   "letter": {
-    "description": "Welcome to our restaurant. Discover our carefully prepared menu options."
+    "title": "Letter",
+    "description": "Are you ready to experience authentic flavors? Discover UMO, feel the fire, and let yourself be carried away by a cuisine created to awaken all your senses. Gourmet rice dishes, intense embers, and the authentic Mediterranean flavor in every detail."
   },
   "contact": {
     "title": "Contact",

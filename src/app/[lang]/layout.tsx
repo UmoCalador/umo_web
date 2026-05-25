@@ -1,14 +1,24 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Cormorant_Garamond } from "next/font/google";
 import "../globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { AosProvider } from "@/components/providers/AosProvider";
+import { CookieProvider } from "@/context/CookieConsentContext";
+import { CookieBanner } from "@/components/ui/cookieBanner/CookieBanner";
+import { Analytics } from "@/components/ui/analitycs/Analitycs";
+import { getDictionary } from "@/utils/getTranslation";
 
 const geistMontserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
+});
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -58,42 +68,49 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }>) {
+  const { lang } = await params;
+  const translations = await getDictionary(lang);
+  
   return (
     <html
-      lang="es"
-      className={`${geistMontserrat.variable} h-full antialiased`}
+      lang={lang}
+      className={`${geistMontserrat.variable} ${cormorant.variable} h-full antialiased`}
     >
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ""} />
-      <AosProvider />
-      <body className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Restaurant",
-              name: "UMO Fire & Steakhouse",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Cala D'Or",
-                addressCountry: "ES",
-              },
-              servesCuisine: "Steakhouse",
-              telephone: "+34871612605",
-              url: "https://umocalador.es",
-            }),
-          }}
-        />
-      </body>
+      <CookieProvider>
+        <Analytics />
+        <AosProvider />
+        <CookieBanner translations={translations} />
+        <body className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Restaurant",
+                name: "UMO Fire & Steakhouse",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Cala D'Or",
+                  addressCountry: "ES",
+                },
+                servesCuisine: "Steakhouse",
+                telephone: "+34871612605",
+                url: "https://umocalador.es",
+              }),
+            }}
+          />
+        </body>
+      </CookieProvider>
     </html>
   );
 }

@@ -5,21 +5,32 @@
     "contact": "Contacto",
     "news": "Noticias"
   },
+  "cookies":{
+    "text": "Utilizamos cookies para mejorar tu experiencia, personalizar contenido y analizar el tráfico de nuestra web. Al continuar navegando, aceptas el uso de cookies conforme a nuestra política de privacidad.",
+    "accept": "Aceptar",
+    "reject": "Rechazar"
+  },
   "home": {
     "hero": {
-      "text_button": "Reservar"
+      "text_button": "Reservar",
+      "text": "Experiencia gourmet"
     },
     "presentation": {
       "title": "Sobre nosotros",
-      "description": "Somos un restaurante dedicado a ofrecer experiencias culinarias únicas, combinando tradición y creatividad en cada plato. Nuestro compromiso es brindar calidad, sabor y un ambiente inolvidable para cada cliente."
+      "description": "En nuestro restaurante entendemos la gastronomía como una experiencia que se vive con todos los sentidos. Nacemos de la pasión por el fuego, el producto de calidad y la esencia auténtica de la cocina mediterránea, creando un espacio donde tradición y creatividad se encuentran en perfecta armonía.\n\n Cada arroz que sale de nuestra cocina está elaborado con precisión, respeto por el ingrediente y una búsqueda constante del sabor perfecto. Las brasas son el alma de nuestra propuesta: carnes premium seleccionadas cuidadosamente, cocinadas en su punto exacto para potenciar su textura, aroma y carácter.\n\n Nuestro concepto combina elegancia, cercanía y una atmósfera envolvente donde el humo, el fuego y los aromas mediterráneos forman parte de una experiencia gastronómica única. Creemos en los sabores honestos, en la materia prima excepcional y en el arte de compartir alrededor de una buena mesa.\n\n Más que un restaurante, somos un nuevo espacio pensado para disfrutar sin prisas, dejarse sorprender y convertir cada visita en un recuerdo inolvidable.\n\n"
     },
     "our_letter": {
-      "title": "Descubrí nuestra carta",
-      "description": "Explorá sabores únicos y experiencias culinarias diseñadas para cada ocasión.",
+      "title": "Descubre nuestra carta",
+      "description": "Explora sabores únicos y experiencias culinarias diseñadas para cada ocasión.",
       "text_button": "Ver carta"
     },
     "latest_news": {
       "title": "Noticias"
+    },
+    "our_chef":{
+      "title": "Nuestro Chef",
+      "name": "Nombre Apellido",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     }
   },
   "footer": {
@@ -27,7 +38,8 @@
     "location": "Ubicación"
   },
   "letter": {
-    "description": "Bienvenido a nuestro restaurante. Descubrí nuestras opciones de menú cuidadosamente preparadas."
+    "title": "Carta",
+    "description": "¿Estás listo para vivir una experiencia de sabores auténticos? Descubre UMO, siente el fuego y déjate llevar por una cocina creada para despertar todos tus sentidos. Arroces gourmet, brasas intensas y el auténtico sabor mediterráneo en cada detalle."
   },
   "contact": {
     "title": "Contacto",

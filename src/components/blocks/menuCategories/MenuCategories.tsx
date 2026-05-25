@@ -27,7 +27,7 @@ export const MenuCategories = ({ categories }: Props) => {
               }}
             >
               <span className="text-4xl">{cat.icon}</span>
-              <span>{cat.name}</span>
+              <span className="font-semibold">{cat.name}</span>
             </a>
           </li>
         ))}

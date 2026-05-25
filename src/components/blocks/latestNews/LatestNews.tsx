@@ -46,7 +46,7 @@ export const LatestNews = ({ translations }: Props) => {
       data-aos-duration="500"
     >
       <div className="max-w-7xl mx-auto px-6">
-        <h1 className="text-4xl md:text-6xl font-bold flex justify-center pb-10 text-gold">
+        <h1 className="text-4xl md:text-7xl font-bold flex justify-center pb-10 text-gold">
           {translations.home.latest_news.title}
         </h1>
         <div className="flex flex-wrap justify-center gap-8">
