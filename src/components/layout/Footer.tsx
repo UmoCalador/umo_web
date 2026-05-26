@@ -28,10 +28,10 @@ export const Footer = () => {
           <h2 className="text-2xl font-bold">
             <Link href={`/${lang}`} className="hover:text-gray-300">
               <Image
-                src="/img/logo_blanco_554x718.png"
+                src="/img/logo-new-colors.png"
                 alt="UMO logo"
-                width={200}
-                height={200}
+                width={250}
+                height={250}
                 priority
                 style={{ display: "block", margin: "0 auto" }}
               />
