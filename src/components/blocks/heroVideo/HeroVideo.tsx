@@ -55,10 +55,10 @@ export const HeroVideo = ({
         >
           <div className="max-w-7xl mx-auto px-6 w-full flex-col items-center gap-6 text-center">
             <Image
-              src="/img/logo_text.png"
+              src="/img/new_logo.png"
               alt="UMO logo"
-              width={350}
-              height={350}
+              width={400}
+              height={400}
               priority
               style={{ display: "block", margin: "0 auto" }}
             />

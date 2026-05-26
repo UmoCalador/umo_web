@@ -21,8 +21,9 @@
 }
 
 h1, h2 {
-  font-family: var(--font-cormorant);
+  font-family: var(--font-montserrat);
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 body {
