@@ -30,7 +30,14 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3">
         <h1 className="text-xl font-bold justify-self-start font-cormorant text-[60px]" data-aos="fade-right" data-aos-delay="100">
           <Link href={`/${lang}`} className="hover:text-gray-300">
-            UMO
+            <Image
+              src="/img/umo_logo_text.png"
+              alt="UMO logo"
+              width={200}
+              height={200}
+              priority
+              style={{ display: "block", margin: "0 auto" }}
+            />
           </Link>
         </h1>
 
