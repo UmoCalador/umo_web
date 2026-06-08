@@ -12,37 +12,39 @@ import { getTranslationGalleryLetter } from "@/utils/getTranslationGalleryLetter
 const categories: Record<Lang, Category[]> = {
   es: [
     {
-      name: "Entradas",
+      name: "Menú",
       icon: <FaUtensils />,
-      file: "/pdf/entradas.pdf",
+      file: "/carta/pdf/menu/es.pdf",
     },
     {
       name: "Bebidas",
       icon: <FaWineGlass />,
-      file: "/pdf/bebidas.pdf",
-    },
-    {
-      name: "Postres",
-      icon: <FaIceCream />,
-      file: "/pdf/postres.pdf",
-    },
+      file: "/carta/pdf/bebidas/bebidas.pdf",
+    }
   ],
   en: [
     {
-      name: "tickets",
+      name: "Tickets",
       icon: <FaUtensils />,
-      file: "/pdf/tickets.pdf",
+      file: "/carta/pdf/menu/en.pdf",
     },
     {
       name: "Drinks",
       icon: <FaWineGlass />,
-      file: "/pdf/drinks.pdf",
+      file: "/carta/pdf/bebidas/bebidas.pdf",
+    }
+  ],
+  de: [
+    {
+      name: "Tickets",
+      icon: <FaUtensils />,
+      file: "/carta/pdf/menu/de.pdf",
     },
     {
-      name: "Desserts",
-      icon: <FaIceCream />,
-      file: "/pdf/desserts.pdf",
-    },
+      name: "Drinks",
+      icon: <FaWineGlass />,
+      file: "/carta/pdf/bebidas/bebidas.pdf",
+    }
   ],
 };
 
@@ -92,7 +94,7 @@ export default async function CartaPage({
       </header>*/}
 
       <section
-        className="max-w-7xl mx-auto py-20"
+        className="max-w-7xl mx-auto py-20 px-6"
         data-aos="fade-up"
         data-aos-duration="1250"
       >

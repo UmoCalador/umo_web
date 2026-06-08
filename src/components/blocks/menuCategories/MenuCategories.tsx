@@ -7,7 +7,7 @@ type Props = {
 export const MenuCategories = ({ categories }: Props) => {
   return (
     <>
-      <ul style={{ listStyle: "none", padding: 0 }} className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <ul style={{ listStyle: "none", padding: 0 }} className="max-w-4xl mx-auto gap-5 grid grid-cols-1 sm:grid-cols-2">
         {categories.map((cat) => (
           <li key={cat.name} style={{ marginBottom: "1rem" }}>
             <a
