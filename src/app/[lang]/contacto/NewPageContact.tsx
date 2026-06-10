@@ -23,8 +23,8 @@ export default function NewPageContact({ translations }: Props) {
           {translations.contact.description}
         </p>
       </header>
-      <section className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pb-10" data-aos="fade-up" data-aos-duration="1000">
-        {/*<address className="not-italic">
+      <section className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pb-10" data-aos="fade-up" data-aos-duration="1000">
+        <address className="not-italic">
           <a
             href="https://wa.me/34641467880"
             target="_blank"
@@ -39,7 +39,7 @@ export default function NewPageContact({ translations }: Props) {
             <FaWhatsapp className="text-4xl" />
             <span className="font-semibold">+34 641 46 78 80</span>
           </a> 
-        </address> */}
+        </address>
         <address className="not-italic">
           <a
             href="tel:+34871612605"

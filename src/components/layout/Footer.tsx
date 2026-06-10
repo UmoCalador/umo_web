@@ -53,7 +53,7 @@ export const Footer = () => {
             >
               <FaInstagram />
             </a>
-            {/*<a
+            <a
               href="https://wa.me/34641467880"
               target="_blank"
               rel="noopener noreferrer"
@@ -61,7 +61,7 @@ export const Footer = () => {
               onClick={() => handleContactClick("whatsapp")}
             >
               <FaWhatsapp />
-            </a>*/}
+            </a>
             <a
               href="tel:+34871612605"
               target="_blank"
