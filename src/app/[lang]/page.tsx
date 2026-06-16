@@ -20,7 +20,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
     <>
       <LoadingProvider>
         {/* <Preloader /> */} 
-        <HeroVideo translations={translations} videoSrc="/umo_hero.mp4" showLogo={true} />
+        <HeroVideo translations={translations} videoSrc="/hero_video.mp4" showLogo={true} />
         <Presentation translations={translations}/>
         <OurLetter translations={translations}/>
         <OurChef translations={translations}/>
