@@ -9,10 +9,10 @@ export const OurChef = ({ translations }: Props) => {
   return (
     <section className="w-full py-30 our_chef relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-l from-black via-black/100 to-transparent"></div>
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <div className="hidden md:flex">
-            <div className="relative w-full max-w-md h-[500px] overflow-hidden">
+      <div className="mx-auto px-6">
+        <div className="grid grid-cols-1 xl:grid-cols-2 items-center">
+          <div className="hidden xl:flex justify-center">
+            <div className="relative w-full max-w-xl min-[1440px]:max-w-2xl h-[700px] overflow-hidden">
               <Image
                 src="/img/our_chef/our_chef.png"
                 alt="Our Chef"
@@ -22,15 +22,15 @@ export const OurChef = ({ translations }: Props) => {
             </div>
           </div>
           <div data-aos="fade-left" data-aos-offset="300">
-            <h1 className="text-4xl md:text-7xl font-bold text-gold">
-              {translations.home.our_chef.title}
+            <h1 className="text-4xl md:text-5xl font-bold text-gold text-center xl:text-left">
+              {translations.home.our_chef.name}
             </h1>
 
-            <h2 className="text-2xl md:text-4xl font-semibold text-white">
-              {translations.home.our_chef.name}
+            <h2 className="text-2xl md:text-4xl font-semibold text-white text-center xl:text-left">
+              {translations.home.our_chef.title}
             </h2>
 
-            <div className="flex justify-center md:hidden my-8">
+            <div className="flex justify-center xl:hidden my-8">
               <div className="relative w-full max-w-md h-[400px] overflow-hidden">
                 <Image
                   src="/img/our_chef/our_chef.png"
