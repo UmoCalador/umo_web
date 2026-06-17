@@ -31,10 +31,10 @@ export const Navbar = () => {
         <h1 className="text-xl font-bold justify-self-start font-cormorant text-[60px]" data-aos="fade-right" data-aos-delay="100">
           <Link href={`/${lang}`} className="hover:text-gray-300">
             <Image
-              src="/img/umo_logo_text.png"
+              src="/img/nav_logo.png"
               alt="UMO logo"
-              width={200}
-              height={200}
+              width={220}
+              height={220}
               priority
               style={{ display: "block", margin: "0 auto" }}
             />
