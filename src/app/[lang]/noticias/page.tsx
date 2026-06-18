@@ -23,12 +23,19 @@ export const metadata: Metadata = {
 
 async function getInitialNews() {
   try {
+    const controller = new AbortController();
+
+    const timeout = setTimeout(() => controller.abort(), 9000);
+
     const res = await fetch(
       `${API_URL}/api/news?populate=*&sort=publishedAt:desc`,
       {
         cache: "no-store",
+        signal: controller.signal,
       },
     );
+
+    clearTimeout(timeout);
 
     if (!res.ok) {
       console.error("Error API noticias:", res.status);
