@@ -28,24 +28,35 @@ export const Navbar = () => {
       className={`w-full text-white px-6 py-2 fixed top-0 z-50 transition-colors duration-300 ${scrolled || isOpen ? "bg-black" : "bg-transparent"}`}
     >
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3">
-        <h1 className="text-xl font-bold justify-self-start font-cormorant text-[60px]" data-aos="fade-right" data-aos-delay="100">
+        <div
+          className="text-xl font-bold justify-self-start font-cormorant text-[60px]"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <Link href={`/${lang}`} className="hover:text-gray-300">
             <Image
-              src="/img/nav_logo.png"
+              src="/img/nav_logo_v1.png"
               alt="UMO logo"
               width={220}
               height={220}
-              priority
-              style={{ display: "block", margin: "0 auto" }}
+              className="w-auto h-auto mx-auto"
             />
           </Link>
-        </h1>
+        </div>
 
-        <div className="hidden items-center md:flex gap-6 text-md justify-self-center" data-aos="fade-down" data-aos-delay="100">
+        <div
+          className="hidden items-center md:flex gap-6 text-md justify-self-center"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           <NavLinks />
         </div>
 
-        <div className="hidden items-center md:flex gap-6 text-md justify-self-end" data-aos="fade-left" data-aos-delay="100">
+        <div
+          className="hidden items-center md:flex gap-6 text-md justify-self-end"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
           <LanguageSwitcher />
         </div>
         <button
