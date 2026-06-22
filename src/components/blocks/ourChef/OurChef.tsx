@@ -17,7 +17,10 @@ export const OurChef = ({ translations }: Props) => {
                 src="/img/our_chef/our_chef.png"
                 alt="Our Chef"
                 fill
-                className="object-cover object-center" data-aos="fade-right" data-aos-offset="300"
+                sizes="(min-width: 1440px) 672px, (min-width: 1280px) 576px, 100vw"
+                className="object-cover object-center"
+                data-aos="fade-right"
+                data-aos-offset="300"
               />
             </div>
           </div>
@@ -36,6 +39,7 @@ export const OurChef = ({ translations }: Props) => {
                   src="/img/our_chef/our_chef.png"
                   alt="Our Chef"
                   fill
+                  sizes="(max-width: 768px) 100vw, 448px"
                   className="object-cover object-center"
                 />
               </div>
