@@ -59,6 +59,7 @@ export const Gallery = ({ items }: Props) => {
               src={item.image}
               alt={item.title}
               fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
               className="object-cover"
             />
           </div>
@@ -102,13 +103,13 @@ export const Gallery = ({ items }: Props) => {
               transition={{ duration: 0.25 }}
               className="max-w-5xl max-h-[85vh] w-full gap-4"
             >
-<Image
-                  src={selected.image}
-                  alt={selected.title}
-                  width={1200}
-                  height={800}
-                  className="mx-auto h-auto max-w-full max-h-[85vh] object-contain"
-                />
+              <Image
+                src={selected.image}
+                alt={selected.title}
+                width={1200}
+                height={800}
+                className="mx-auto h-auto max-w-full max-h-[85vh] object-contain"
+              />
             </motion.div>
           </motion.div>
         )}
