@@ -14,7 +14,7 @@ export default function NewPageContact({ translations }: Props) {
   };
 
   return (
-    <section className="min-h-screen max-w-7xl mx-auto px-6 pt-28 pb-6 ">
+    <section className="min-h-screen max-w-7xl mx-auto px-6 pt-28">
       <header>
         <h1 className="text-4xl md:text-7xl font-bold pb-2 text-gold text-center" data-aos="fade-up" data-aos-duration="500">
           {translations.contact.title}
