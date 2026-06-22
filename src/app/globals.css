@@ -43,6 +43,16 @@ body {
   background-attachment: fixed;
 }
 
+img:not([data-nimg]) {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 .presentation {
   background-image: url("/img/presentation/presentation.jpg");
   background-size: initial;
