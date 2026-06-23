@@ -18,7 +18,7 @@ export const Footer = () => {
     sendGTMEvent({ event: "contact_click", method, location: "footer" });
   };
   return (
-    <footer className="w-full bg-black text-white">
+    <footer className="w-full bg-black text-white mt-6">
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <div className="flex flex-col items-center text-lg  gap-2">
           <NavLinks />
