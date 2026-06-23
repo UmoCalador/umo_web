@@ -26,7 +26,7 @@ export default function NewPageContact({ translations }: Props) {
       <section className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pb-10" data-aos="fade-up" data-aos-duration="1000">
         <address className="not-italic">
           <a
-            href="https://wa.me/34641467880"
+            href="https://wa.me/34614530068"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center
@@ -37,7 +37,7 @@ export default function NewPageContact({ translations }: Props) {
             onClick={() => handleContactClick("whatsapp")}
           >
             <FaWhatsapp className="text-4xl" />
-            <span className="font-semibold">+34 641 46 78 80</span>
+            <span className="font-semibold">+34 614 53 00 68</span>
           </a> 
         </address>
         <address className="not-italic">

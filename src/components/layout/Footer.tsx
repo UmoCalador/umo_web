@@ -54,7 +54,7 @@ export const Footer = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://wa.me/34641467880"
+              href="https://wa.me/34614530068"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 text-xl"
