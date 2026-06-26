@@ -57,7 +57,7 @@ export default function NewPageContact({ translations }: Props) {
         </address>
         <address className="not-italic">
           <a
-            href="https://www.instagram.com/umo.calador26"
+            href="https://www.instagram.com/umo.calador"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center
@@ -68,7 +68,7 @@ export default function NewPageContact({ translations }: Props) {
             onClick={() => handleContactClick("instagram")}
           >
             <FaInstagram className="text-4xl" />
-            <span className="font-semibold">@umo.calador26</span>
+            <span className="font-semibold">@umo.calador</span>
           </a>
         </address>
         <address className="not-italic">

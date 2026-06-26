@@ -45,7 +45,7 @@ export const Footer = () => {
           </h2>
           <div className="flex gap-4 text-center pb-8 justify-center">
             <a
-              href="https://www.instagram.com/umo.calador26"
+              href="https://www.instagram.com/umo.calador"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 text-xl"
