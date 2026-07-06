@@ -63,15 +63,6 @@ export const Footer = () => {
               <FaWhatsapp />
             </a>
             <a
-              href="tel:+34871612605"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-300"
-              onClick={() => handleContactClick("phone")}
-            >
-              <FaPhone />
-            </a>
-            <a
               href="mailto:info@umocalador.es"
               target="_blank"
               rel="noopener noreferrer"

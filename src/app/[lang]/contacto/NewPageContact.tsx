@@ -23,7 +23,7 @@ export default function NewPageContact({ translations }: Props) {
           {translations.contact.description}
         </p>
       </header>
-      <section className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pb-10" data-aos="fade-up" data-aos-duration="1000">
+      <section className="gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pb-10" data-aos="fade-up" data-aos-duration="1000">
         <address className="not-italic">
           <a
             href="https://wa.me/34614530068"
@@ -39,21 +39,6 @@ export default function NewPageContact({ translations }: Props) {
             <FaWhatsapp className="text-4xl" />
             <span className="font-semibold">+34 614 53 00 68</span>
           </a> 
-        </address>
-        <address className="not-italic">
-          <a
-            href="tel:+34871612605"
-            className="flex flex-col items-center justify-center
-              bg-gray-800 text-white
-              rounded-xl px-6 py-12
-              transition hover:bg-gray-700
-              h-full gap-5"
-            onClick={() => handleContactClick("phone")}
-
-          >
-            <FaPhone className="text-4xl" />
-            <span className="font-semibold">+34 871 612 605</span>
-          </a>
         </address>
         <address className="not-italic">
           <a
