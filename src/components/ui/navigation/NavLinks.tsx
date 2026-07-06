@@ -33,7 +33,7 @@ export const NavLinks = () => {
         {translations.navigation.news}
       </Link>
       <Link href="https://widget.thefork.com/93bb04b9-f5b4-4022-8ba8-52afd0deaee9" target="_blank" className={linkClass("/reservar")}>
-        {translations.navigation.reserve}
+        {translations.navigation.reserve} 
       </Link>
     </>
   );
