@@ -66,7 +66,7 @@ export const HeroVideo = ({
               {translations.home.hero.text}
             </h1>
             <ButtonLink
-              href="https://wa.me/34614530068"
+              href="https://widget.thefork.com/93bb04b9-f5b4-4022-8ba8-52afd0deaee9"
               bgColor="bg-gradient-to-b from-[#F1DF7D] to-[#E19025]"
               hoverBgColor="hover:bg-none hover:bg-transparent"
               textColor="text-black"
