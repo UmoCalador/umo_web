@@ -23,7 +23,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
         <HeroVideo translations={translations} videoSrc="/hero_video.mp4" showLogo={true} />
         <Presentation translations={translations}/>
         <OurLetter translations={translations}/>
-        <OurChef translations={translations}/>
+        {/* <OurChef translations={translations}/> */}
         <Gallery items={translationGalleryHome} />
         <LatestNews translations={translations}/>
         <Map />
