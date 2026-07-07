@@ -1,6 +1,6 @@
 
 "use client";
-import { Map } from "@/components/blocks/map/Map";
+import { Map } from "@/components/ui/map/Map";
 import { FaInstagram, FaPhone, FaWhatsapp, FaMailBulk } from "react-icons/fa";
 import { sendGTMEvent } from "@next/third-parties/google";
 

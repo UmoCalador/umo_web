@@ -6,7 +6,7 @@
     "news": "Noticias",
     "reserve": "Reservar"
   },
-  "cookies":{
+  "cookies": {
     "text": "Utilizamos cookies para mejorar tu experiencia, personalizar contenido y analizar el tráfico de nuestra web. Al continuar navegando, aceptas el uso de cookies conforme a nuestra política de privacidad.",
     "accept": "Aceptar",
     "reject": "Rechazar"
@@ -28,14 +28,17 @@
     "latest_news": {
       "title": "Noticias"
     },
-    "our_chef":{
+    "our_chef": {
       "title": "Nuestro Chef",
       "name": "Nombre Apellido",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    "map": {
+      "title": "¿Donde nos encontramos?"
     }
   },
   "footer": {
-    "contact":"Contacto",
+    "contact": "Contacto",
     "location": "Ubicación"
   },
   "letter": {
@@ -50,9 +53,9 @@
     "title": "Noticias",
     "description": "Descubre todas las noticias y eventos.",
     "no_news": "No hay noticias disponibles por el momento.",
-    "card" : {
-      "read_more": "Leer más"    
-    }   
+    "card": {
+      "read_more": "Leer más"
+    }
   },
   "legal": {
     "politica-de-privacidad": {

@@ -6,7 +6,7 @@
     "news": "News",
     "reserve": "Reserve"
   },
-  "cookies":{
+  "cookies": {
     "text": "We use cookies to improve your experience, personalize content, and analyze our website traffic. By continuing to browse, you agree to the use of cookies in accordance with our privacy policy.",
     "accept": "Accept",
     "reject": "Reject"
@@ -28,10 +28,13 @@
     "latest_news": {
       "title": "News"
     },
-    "our_chef":{
+    "our_chef": {
       "title": "Our Chef",
       "name": "first name last name",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    "map": {
+      "title": "Where are we located?"
     }
   },
   "footer": {
