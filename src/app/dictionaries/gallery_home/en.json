@@ -22,5 +22,77 @@
     "image": "/img/gallery_home/4.jpeg",
     "title": "Lorem ipsum 4",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 5,
+    "image": "/img/gallery_home/5.jpeg",
+    "title": "Lorem ipsum 5",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 6,
+    "image": "/img/gallery_home/6.jpeg",
+    "title": "Lorem ipsum 6",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 7,
+    "image": "/img/gallery_home/7.jpeg",
+    "title": "Lorem ipsum 7",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 8,
+    "image": "/img/gallery_home/8.jpeg",
+    "title": "Lorem ipsum 8",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 9,
+    "image": "/img/gallery_home/9.jpeg",
+    "title": "Lorem ipsum 9",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 10,
+    "image": "/img/gallery_home/10.jpeg",
+    "title": "Lorem ipsum 10",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 11,
+    "image": "/img/gallery_home/11.jpeg",
+    "title": "Lorem ipsum 11",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 12,
+    "image": "/img/gallery_home/12.jpeg",
+    "title": "Lorem ipsum 12",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 13,
+    "image": "/img/gallery_home/13.jpeg",
+    "title": "Lorem ipsum 13",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 14,
+    "image": "/img/gallery_home/14.jpeg",
+    "title": "Lorem ipsum 14",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 15,
+    "image": "/img/gallery_home/15.jpeg",
+    "title": "Lorem ipsum 15",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  {
+    "id": 16,
+    "image": "/img/gallery_home/16.jpeg",
+    "title": "Lorem ipsum 16",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   }
 ]
