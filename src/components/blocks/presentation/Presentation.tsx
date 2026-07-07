@@ -12,7 +12,7 @@ export const Presentation = ({ translations }: Props) => {
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/100 to-transparent" ></div>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <div data-aos="fade-right" data-aos-offset="300">
+          <div data-aos="fade-up" data-aos-offset="200">
             <h1 className="text-4xl md:text-7xl font-bold text-gold">{translations.home.presentation.title}</h1>
 
             <div className="mt-4 text-white leading-relaxed text-sm md:text-base font-semibold">
