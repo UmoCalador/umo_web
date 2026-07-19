@@ -1,8 +1,9 @@
 "use client";
-import { ButtonLink } from "@/components/ui/buttonLink/ButtonLink";
+
 import Image from "next/image";
 import { useLoading } from "@/context/LoadingContext";
 import { ScrollIndicator } from "@/components/ui/scrolledIndicator";
+import { ReservationButton } from "@/components/ui/reservationModal/ReservationButton";
 
 type Props = {
   translations: any;
@@ -65,23 +66,32 @@ export const HeroVideo = ({
             <h1 className="text-white text-2xl font-bold">
               {translations.home.hero.text}
             </h1>
-            <ButtonLink
-              href="https://widget.thefork.com/93bb04b9-f5b4-4022-8ba8-52afd0deaee9"
-              bgColor="bg-gradient-to-b from-[#F1DF7D] to-[#E19025]"
-              hoverBgColor="hover:bg-none hover:bg-transparent"
-              textColor="text-black"
-              hoverTextColor="hover:text-white"
-              borderColor="border border-[#F1DF7D] border-2"
-              hoverBorderColor="hover:border-[#E19025] hover:border-2"
-              target="_blank"
-              eventData={{
-                event: "contact_click",
-                method: "whatsapp",
-                location: "home",
-              }}
+            <ReservationButton
+              className="
+inline-flex
+items-center
+mt-6
+px-10
+py-3
+rounded-3xl
+font-semibold
+transition
+text-sm
+bg-gradient-to-b
+from-[#F1DF7D]
+to-[#E19025]
+text-black
+border
+border-[#F1DF7D]
+border-2
+hover:bg-none
+hover:bg-transparent
+hover:text-white
+hover:border-[#E19025]
+"
             >
               {translations.home.hero.text_button} →
-            </ButtonLink>
+            </ReservationButton>
           </div>
         </div>
       )}
