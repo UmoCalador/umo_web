@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { getDictionary } from "@/utils/getTranslation";
+import { ReservationButton } from "../reservationModal/ReservationButton";
 
 export const NavLinks = () => {
   const pathname = usePathname();
@@ -11,13 +12,16 @@ export const NavLinks = () => {
 
   const isActive = (path: string) => {
     if (path === "/noticias") {
-      return pathname === `/${lang}/noticias` || pathname.startsWith(`/${lang}/noticia/`);
+      return (
+        pathname === `/${lang}/noticias` ||
+        pathname.startsWith(`/${lang}/noticia/`)
+      );
     }
     return pathname === `/${lang}${path}`;
   };
 
   const linkClass = (path: string) =>
-    `font-semibold hover:text-gold ${
+    `font-semibold hover:text-gold  cursor-pointer ${
       isActive(path) ? "text-gold" : "text-white"
     }`;
 
@@ -32,9 +36,9 @@ export const NavLinks = () => {
       <Link href={`/${lang}/noticias`} className={linkClass("/noticias")}>
         {translations.navigation.news}
       </Link>
-      <Link href="https://widget.thefork.com/93bb04b9-f5b4-4022-8ba8-52afd0deaee9" target="_blank" className={linkClass("/reservar")}>
-        {translations.navigation.reserve} 
-      </Link>
+      <ReservationButton className={linkClass("/reservar")}>
+        {translations.navigation.reserve}
+      </ReservationButton>
     </>
   );
 };
