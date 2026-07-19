@@ -9,6 +9,8 @@ import { CookieProvider } from "@/context/CookieConsentContext";
 import { CookieBanner } from "@/components/ui/cookieBanner/CookieBanner";
 import { Analytics } from "@/components/ui/analitycs/Analitycs";
 import { getDictionary } from "@/utils/getTranslation";
+import { ReservationModalProvider } from "@/context/ReservationModalContext";
+import { ReservationModal } from "@/components/ui/reservationModal/ReservationModal";
 
 const geistMontserrat = Montserrat({
   variable: "--font-montserrat",
@@ -85,6 +87,7 @@ export default async function RootLayout({
       lang={lang}
       className={`${geistMontserrat.variable} ${cormorant.variable} h-full antialiased`}
     >
+      <ReservationModalProvider>
       <CookieProvider>
         <Analytics />
         <AosProvider />
@@ -92,7 +95,9 @@ export default async function RootLayout({
         <body className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-1">{children}</main>
+          
           <Footer />
+          <ReservationModal translations={translations}/>
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -113,6 +118,7 @@ export default async function RootLayout({
           />
         </body>
       </CookieProvider>
+      </ReservationModalProvider>      
     </html>
   );
 }
