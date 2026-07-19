@@ -37,6 +37,11 @@
       "title": "¿Donde nos encontramos?"
     }
   },
+  "reservation_modal": {
+    "title":"Reservar mesa",
+    "text": "Elegí cómo querés realizar tu reserva.",
+    "back": "Volver"
+  },
   "footer": {
     "contact": "Contacto",
     "location": "Ubicación"
