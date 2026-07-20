@@ -156,7 +156,7 @@ export const ReservationModal = ({ translations }: Props) => {
             <div className="p-6">
               <button
                 onClick={() => setShowCoverManager(false)}
-                className="mb-5 font-semibold cursor-pointer"
+                className="mb-5 font-semibold cursor-pointer text-black"
               >
                 ← {translations.reservation_modal.back}
               </button>
