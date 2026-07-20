@@ -6,7 +6,7 @@ type Props = {
 
 export const MapHome = ({ translations }: Props) => {
   return (
-    <section className="py-20">
+    <section className="pt-20">
       <h1 className="text-4xl md:text-7xl font-bold flex justify-center pb-10 text-white" data-aos="fade-up" data-aos-duration="500">
         {translations.home.map.title}
       </h1>
