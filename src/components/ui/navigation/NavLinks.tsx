@@ -21,7 +21,7 @@ export const NavLinks = () => {
   };
 
   const linkClass = (path: string) =>
-    `font-semibold hover:text-gold  cursor-pointer ${
+    `font-semibold hover:text-gold  cursor-pointer text-left md:text-center ${
       isActive(path) ? "text-gold" : "text-white"
     }`;
 
