@@ -25,8 +25,8 @@ export default async function Home({ params }: { params: { lang: string } }) {
         <OurLetter translations={translations}/>
         {/* <OurChef translations={translations}/> */}
         <Gallery items={translationGalleryHome} />
-        <LatestNews translations={translations}/>
         <MapHome translations={translations} />
+        <LatestNews translations={translations}/>
       </LoadingProvider>
     </>
   );

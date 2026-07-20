@@ -41,7 +41,7 @@ export const LatestNews = ({ translations }: Props) => {
 
   return (
     <section
-      className="w-full py-20"
+      className="w-full pt-15 pb-10"
       data-aos="fade-up"
       data-aos-duration="500"
     >
