@@ -106,7 +106,7 @@ export const ReservationModal = ({ translations }: Props) => {
 
           {!showCoverManager && (
             <div className="p-8">
-              <h2 className="text-3xl font-bold text-center mb-3">
+              <h2 className="text-3xl font-bold text-center mb-3 text-black">
                 {translations.reservation_modal.title}
               </h2>
 
