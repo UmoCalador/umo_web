@@ -115,19 +115,32 @@ export const ReservationModal = ({ translations }: Props) => {
               </p>
 
               <div className="space-y-5">
+                <a
+                  href="https://wa.me/34614530068"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center border rounded-xl p-2 hover:shadow-lg transition hover:border-gold cursor-pointer"
+                >
+                  <Image
+                    src="/img/whatsapp_logo_text.png"
+                    alt="TheFork"
+                    width={160}
+                    height={20}
+                  />
+                </a>
                 {/* THE FORK */}
 
                 <a
                   href="https://widget.thefork.com/93bb04b9-f5b4-4022-8ba8-52afd0deaee9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex justify-center items-center border rounded-xl p-6 hover:shadow-lg transition hover:border-gold cursor-pointer"
+                  className="flex justify-center items-center border rounded-xl p-4 hover:shadow-lg transition hover:border-gold cursor-pointer"
                 >
                   <Image
                     src="/img/thefork.svg"
                     alt="TheFork"
-                    width={220}
-                    height={60}
+                    width={160}
+                    height={20}
                   />
                 </a>
 
@@ -135,13 +148,13 @@ export const ReservationModal = ({ translations }: Props) => {
 
                 <button
                   onClick={() => setShowCoverManager(true)}
-                  className="w-full flex justify-center items-center border rounded-xl p-6 hover:shadow-lg transition hover:border-gold cursor-pointer"
+                  className="w-full flex justify-center items-center border rounded-xl p-5 hover:shadow-lg transition hover:border-gold cursor-pointer"
                 >
                   <Image
                     src="/img/covermanager.png"
                     alt="Cover Manager"
-                    width={220}
-                    height={60}
+                    width={180}
+                    height={40}
                   />
                 </button>
               </div>
